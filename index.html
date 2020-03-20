@@ -1,0 +1,36 @@
+﻿<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	    <meta charset="utf-8">
+		<title>Brainfuck VM</title>
+		<script src="js/index.js"></script>
+	    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="content-panel">
+            <div class="vm-state">
+                <div id="memory_blocks" class="memory-state">
+
+                </div>
+                <div class="register-state">
+                    <div>PC: <div id="text_vmPc"></div></div>
+                    <div>MemPtr: <div id="text_vmMemPtr"></div></div>
+                </div>
+                <div class="io-streams">
+                    <input id="text_stdin" placeholder="Input" />
+                    <input id="text_stdout" placeholder="Output" readonly="readonly" />
+                </div>
+            </div>
+			<div class="code-block">
+				<textarea id="text_bfasm" placeholder="BF-ASM code"></textarea>
+				<textarea id="text_bfsrc" placeholder="Brainfuck code"></textarea>
+			</div>
+			<div class="button-block">
+				<button id="button_bfAsmTranspile">BF-ASM Transpile</button>
+				<button id="button_vmStep">VM Step</button>
+				<button id="button_vmRun">VM Run</button>
+				<button id="button_loadToVm">Load to VM</button>
+			</div>
+		</div>
+    </body>
+</html>
