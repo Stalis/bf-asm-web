@@ -1,0 +1,60 @@
+.content-panel {
+    display: grid;
+    align-content: center;
+}
+
+.vm-state {
+    display: grid;
+}
+
+.memory-state {
+    display: flex;
+}
+
+.memory-state .memory-cell {
+    margin: 5px;
+    padding: 2px;
+    text-align: center;
+    width: 30px;
+    background: lightgray;
+}
+
+.memory-state .memory-cell.chosen-cell {
+    background: lime;
+}
+
+.register-state {
+    margin: 5px;
+}
+
+.register-state div {
+    display: flex;
+}
+
+.io-streams {
+    display: grid;
+}
+
+.io-streams input {
+    width: 160px;
+    margin: 5px;
+}
+
+.code-block {
+    display: flex;
+    align-content: center;
+}
+
+.code-block textarea {
+    width: 270px;
+    height: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.button-block {
+    display: flex;
+    align-content: center;
+    width: 500px;
+    margin: 5px;
+}
